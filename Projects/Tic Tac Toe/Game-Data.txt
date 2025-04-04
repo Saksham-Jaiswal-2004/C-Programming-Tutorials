@@ -1,0 +1,17 @@
+1. Images Update
+2. Images and Videos preview update
+3. Review Form
+4. Admin Panel (Optional)
+5. Using Animation (Framer Motion)
+6. Blog Addition (Medium Integration)
+
+1. Logo - Different Types
+2. Business Card (Optional)
+3. Banner - Linked-in, Houzz
+4. Pinterest - Board Covers
+5. Watermark
+6. Different post and vid templates
+  a. Project Pics
+  b. Mini company banner - to be attached on the pics
+  c. Client Testimonials
+  d. Video/Reels/Shorts Cover image
