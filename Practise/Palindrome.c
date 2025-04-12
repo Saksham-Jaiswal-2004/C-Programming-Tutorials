@@ -5,13 +5,13 @@ int main()
 {
     int n, len, new=0;
 
-    printf("Enter number of digits:",n);
+    printf("Enter number of digits: ");
     scanf("%d", &len);
-    printf("Enter a %d-digits number number:",len);
+    printf("Enter a %d-digits number: ", len);
     scanf("%d", &n);
 
-    int min = pow(10, len - 1);   // Smallest n-digit number
-    int max = pow(10, len) - 1;   // Largest n-digit number
+    int min = pow(10, len - 1);
+    int max = pow(10, len) - 1;
     if (n < min || n > max) 
     {
         printf("Error: The number is not %d digits long.\n", len);
@@ -27,9 +27,9 @@ int main()
     }
 
     if(new==n)
-    printf("Palindrome Number!");
+        printf("%d is a Palindrome Number!\n", n);
     else
-    printf("Not a Palindrome Number!");
+        printf("%d is not a Palindrome Number!\n", n);
 
     return 0;
 }

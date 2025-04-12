@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+********  Past Games  ********
+=======
+>>>>>>> recovered-work
 1. Images Update
 2. Images and Videos preview update
 3. Review Form
@@ -14,4 +20,9 @@
   a. Project Pics
   b. Mini company banner - to be attached on the pics
   c. Client Testimonials
+<<<<<<< HEAD
   d. Video/Reels/Shorts Cover image
+=======
+  d. Video/Reels/Shorts Cover image
+>>>>>>> c77f237 (C)
+>>>>>>> recovered-work

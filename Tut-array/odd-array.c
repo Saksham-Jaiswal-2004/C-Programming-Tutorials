@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int countOdd(int arr[]);
+int countOdd(int arr[], int size); // Add size parameter
 
 int main()
 {
@@ -19,22 +19,19 @@ int main()
         printf("%d\t", arr[i]);
     }
 
-    printf("\nNumber of Odd Elements in Array : %d", countOdd(arr));
+    printf("\nNumber of Odd Elements in Array : %d", countOdd(arr, n)); // Pass size parameter
+    return 0;  // Added missing return statement
 }
 
-int countOdd(int arr[])
+int countOdd(int arr[], int size) // Add size parameter
 {
-    int count=0, len;
-
-    len = sizeof(*arr);
-
-    for(int i=0 ; i<=len ; i++)
+    int count=0;
+    for(int i=0; i<size; i++)
     {
         if(arr[i]%2!=0)
         {
             count++;
         }
     }
-
     return count;
 }

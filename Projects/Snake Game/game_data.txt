@@ -1,1 +1,28 @@
+<<<<<<< HEAD
 100
+=======
+*************************************
+************* Game Data *************
+*************************************
+
+Player: BOT1
+Score: 70
+Date and Time: 2025-04-07 17:35:49
+
+Player: BOT2
+Score: 60
+Date and Time: 2025-04-07 17:41:38
+
+Player: S
+Score: 60
+Date and Time: 2025-04-08 01:01:11
+
+Player: Play
+Score: 240
+Date and Time: 2025-04-08 01:19:17
+
+Player: test
+Score: 60
+Date and Time: 2025-04-08 12:19:07
+
+>>>>>>> recovered-work

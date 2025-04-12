@@ -14,7 +14,6 @@ int main()
             {
                 if(j==i || j==(n-i-1)) //Checking condition to print '*' for X pattern
                 {
-                    //printf("*"); //Printing '*'
                     printf(" ");
                 }
                 else
@@ -41,7 +40,6 @@ int main()
             {
                 if(j==((n-1)/2)) //Checking condition to print '*' for X pattern
                 {
-                    //printf("*"); //Printing '*'
                     printf(" ");
                 }
                 else if(j==i || j==(n-i-1))
@@ -76,7 +74,6 @@ int main()
                 }
                 else if(j==((n-1)/2)) //Checking condition to print '*' for X pattern
                 {
-                    //printf("*"); //Printing '*'
                     printf("   ");
                 }
                 else if(j==i || j==(n-i-1))

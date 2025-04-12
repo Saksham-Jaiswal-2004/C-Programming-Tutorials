@@ -13,13 +13,12 @@ int main()
         for(j=1 ; j<=side ; j++)
         {
             if(i==(1+k) || i==(side-k) || j==(1+l) || j==(side-l))
-            // if(i==(1+k) || i==(side-k))
             {
                 printf("%d", (n-k));
             }
             else
             {
-                printf("%c", "*");
+                printf("%c", '*');
             }
         }
         k++;

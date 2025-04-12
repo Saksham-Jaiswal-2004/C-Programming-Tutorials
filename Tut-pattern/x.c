@@ -8,24 +8,24 @@ int main()
     
     if(n%2 != 0) //Checking condition to print X pattern
     {
-        for(int i=0 ; i<n ; i++) //Running first loop to control different lines
+        // First pattern
+        for(int i=0 ; i<n ; i++)
         {
-            for(int j=0 ; j<n ; j++) //Running second loop to control every element in each line
+            for(int j=0 ; j<n ; j++)
             {
-                if(j==i || j==(n-i-1)) //Checking condition to print '*' for X pattern
+                if(j==i || j==(n-i-1))
                 {
-                    //printf("*"); //Printing '*'
                     printf("*");
                 }
                 else
                 {
-                    printf(" "); //Printing spaces where X pattern is not present
+                    printf(" ");
                 }
             }
-            printf("\n"); //Changing line
+            printf("\n");
         }
     }
-    else //Warning statements to be printed when wrong input is given by user
+    else
     {
         printf("INVALID INPUT!\n");
         printf("Enter odd numbers only!\n");
@@ -33,70 +33,62 @@ int main()
 
     printf("\n\n");
 
-    if(n%2 != 0) //Checking condition to print X pattern
+    if(n%2 != 0)
     {
-        for(int i=0 ; i<n ; i++) //Running first loop to control different lines
+        // Second pattern
+        for(int i=0 ; i<n ; i++)
         {
-            for(int j=0 ; j<n ; j++) //Running second loop to control every element in each line
+            for(int j=0 ; j<n ; j++)
             {
-                if(j==((n-1)/2)) //Checking condition to print '*' for X pattern
-                {
-                    //printf("*"); //Printing '*'
-                    printf("*");
-                }
-                else if(j==i || j==(n-i-1))
+                if(j==((n-1)/2) || j==i || j==(n-i-1))
                 {
                     printf("*");
                 }
                 else
                 {
-                    printf(" "); //Printing spaces where X pattern is not present
+                    printf(" ");
                 }
             }
-            printf("\n"); //Changing line
+            printf("\n");
         }
-    }
-    else //Warning statements to be printed when wrong input is given by user
-    {
-        printf("INVALID INPUT!\n");
-        printf("Enter odd numbers only!\n");
     }
 
     printf("\n\n");
 
-    for(int i=0 ; i<n ; i++) //Running first loop to control different lines
+    // Third pattern
+    for(int i=0 ; i<n ; i++)
+    {
+        for(int j=0 ; j<n ; j++)
         {
-            for(int j=0 ; j<n ; j++) //Running second loop to control every element in each line
+            if(n%2==0)
             {
-                if(n%2==0)
+                if(i==j || j==(n-1-i))
                 {
-                    if(i==j || j==(n-1-i))
-                    {
-                        printf("***");
-                    }
-                    else
-                    {
-                        printf(" ");
-                    }
+                    printf("***");
                 }
                 else
                 {
-                    if(i==((n-1)/2) && (i==j || j==(n-1-i)))
-                    {
-                        printf("*****");
-                    }
-                    else if(i==j || j==(n-1-i))
-                    {
-                        printf("***");
-                    }
-                    else
-                    {
-                        printf(" ");
-                    }
+                    printf(" ");
                 }
             }
-            printf("\n"); //Changing line
+            else
+            {
+                if(i==((n-1)/2) && (i==j || j==(n-1-i)))
+                {
+                    printf("*****");
+                }
+                else if(i==j || j==(n-1-i))
+                {
+                    printf("***");
+                }
+                else
+                {
+                    printf(" ");
+                }
+            }
         }
+        printf("\n");
+    }
     
     return 0;
 }//End of main
