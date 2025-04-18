@@ -52,6 +52,19 @@ int pop(struct stack* p)
     }
 }
 
+int peek(struct stack* p, int i)
+{
+    if(isEmpty(p))
+    return -1;
+    else if((p->top - i +1) < 0)
+    {
+        printf("Not a Valid Position.\n");
+        return -1;
+    }
+    else
+    return p->arr[p->top - i + 1];
+}
+
 int main()
 {
     struct stack* sp = (struct stack*) malloc(sizeof(struct stack));
@@ -73,15 +86,20 @@ int main()
     printf("Full: %d\n", isFull(sp));
     printf("Empty: %d\n", isEmpty(sp));
 
-    pop(sp);
-    pop(sp);
-    pop(sp);
-    pop(sp);
-    pop(sp);
+    printf("\n");
 
-    printf("\nAfter Poping:\n");
-    printf("Full: %d\n", isFull(sp));
-    printf("Empty: %d\n", isEmpty(sp));
+    // pop(sp);
+    // pop(sp);
+    // pop(sp);
+    // pop(sp);
+    // pop(sp);
+
+    // printf("\nAfter Poping:\n");
+    // printf("Full: %d\n", isFull(sp));
+    // printf("Empty: %d\n\n", isEmpty(sp));
+
+    for(int i=1 ; i<=sp->top+1 ; i++)
+    printf("Element at %d in Stack is: %d\n", i, peek(sp, i));
 
     return 0;
 }
