@@ -42,6 +42,23 @@ struct node* push(struct node* top, int data)
     }
 }
 
+struct node* pop(struct node* top)
+{
+    if(isEmpty(top))
+    {
+        printf("Stack Underflow!\n");
+        return NULL;
+    }
+    else
+    {
+        struct node* temp = top;
+        top = top->next;
+        temp->next = NULL;
+        free(temp);
+        return top;
+    }
+}
+
 void printStack(struct node* top)
 {
     while(top != NULL)
@@ -57,7 +74,17 @@ int main()
     top = push(top, 65);
     top = push(top, 7);
     top = push(top, 42);
+    top = push(top, 82);
+    top = push(top, 29);
+    top = push(top, 31);
 
     printStack(top);
+    printf("\n");
+    
+    top = pop(top);
+    top = pop(top);
+    
+    printStack(top);
+    printf("\n");
     return 0;
 }
