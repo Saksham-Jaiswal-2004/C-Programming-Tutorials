@@ -71,7 +71,8 @@ void BFS(struct Node* adjList[], int nodes)
     q.arr = (int*) malloc(sizeof(int) * q.size);
 
     int visited[nodes];
-    for (int i = 0; i < nodes; i++) visited[i] = 0;
+    for (int i = 0; i < nodes; i++) 
+    visited[i] = 0;
 
     int i = 0;
     printf("BFS Traversal starting from node %d:\n", i);

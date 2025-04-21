@@ -31,10 +31,7 @@ void enqueue(struct Queue* q, int val)
     if(isFull(q))
     printf("Queue Overflow!\n");
     else
-    {
-        // printf("%d Enqueued\n", val);
-        q->arr[++q->rear] = val;
-    }
+    q->arr[++q->rear] = val;
 }
 
 int dequeue(struct Queue* q)
@@ -47,7 +44,6 @@ int dequeue(struct Queue* q)
     else
     {
         q->front++;
-        // printf("%d Dequeued\n", q->arr[q->front]);
         return q->arr[q->front];
     }
 }
@@ -59,7 +55,7 @@ void BFS(int adj[][7])
     q.front = q.rear = -1;
     q.arr = (int*) malloc(sizeof(int) * q.size);
 
-    int node, i=0;
+    int i=0;
     int visited[7] = {0};
     int size = sizeof(adj[0])/sizeof(adj[0][0]);
 
