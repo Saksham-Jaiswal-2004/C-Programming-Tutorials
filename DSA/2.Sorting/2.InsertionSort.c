@@ -9,21 +9,22 @@ void printArray(int arr[], int size)
     printf("\n");
 }
 
-void bubblesort(int *arr, int size)
+void insertionsort(int* arr, int size)
 {
-    for(int i=0 ; i<size-1 ; i++)
+    for (int i = 1; i < size; i++)
     {
-        for(int j=0 ; j<size-1-i ; j++)
+        int key = arr[i];
+        int j = i - 1;
+
+        while (j >= 0 && arr[j] > key)
         {
-            if(arr[j] > arr[j+1])
-            {
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
+            arr[j + 1] = arr[j];
+            j--;
         }
+        arr[j + 1] = key;
     }
 }
+
 
 int main()
 {
@@ -31,7 +32,8 @@ int main()
     int size = sizeof(data)/sizeof(data[0]);
 
     printArray(data, size);
-    bubblesort(data, size);
+    insertionsort(data, size);
     printArray(data, size);
+    
     return 0;
 }
